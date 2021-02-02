@@ -28,6 +28,28 @@ function createFeatures(earthquakes) {
             "</h3><hr><p>" + 'Magnitude:' + ' ' + feature.properties.mag + "</p>");
     }
 
+    // Create a GeoJSON layer containing the features array on the earthquakeData object
+    // Run the onEachFeature function once for each piece of data in the array
+    var earthquakes = L.geoJSON(earthquakes, {
+        onEachFeature: onEachFeature,
+        pointToLayer: function (feature, latlng) {
+            var geojsonMarkerOptions = {
+                radius: 4 * feature.properties.mag,
+                fillColor: getColor(feature.geometry.coordinates[2]),
+                color: "black",
+                weight: 1,
+                opacity: 1,
+                fillOpacity: 0.8
+            };
+            return L.circleMarker(latlng, geojsonMarkerOptions);
+        }
+    });
+
+    // Sending our earthquakes layer to the createMap function
+    createMap(earthquakes);
+}
+
+
 
 
 
