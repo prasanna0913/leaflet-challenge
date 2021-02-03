@@ -23,3 +23,13 @@
 *  Popups provide additional information about the place,time and magnitude of the earthquake when a marker is clicked.
 
 *  Legend is created that will provide context of map data.Depending on the magnitde of the earthquake, colour is determined. Darker the color, greater is the magnitude and vice versa.
+
+# Setup:
+*	There was no specific setup done to work with leaflet.
+*	Visual studio code was used to write the index.html, logic.js.
+
+# Status
+Project is finished
+
+# Contact
+D. Sai Prasanna
