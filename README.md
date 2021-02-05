@@ -23,6 +23,8 @@
 *  Popups provide additional information about the place,time and magnitude of the earthquake when a marker is clicked.
 
 *  Legend is created that will provide context of map data.Depending on the magnitde of the earthquake, colour is determined. Darker the color, greater is the magnitude and vice versa.
+Below is the snip of the streetmap:
+![streetmap](static/image/streetmap.PNG)
 
 # Setup:
 *	There was no specific setup done to work with leaflet.
