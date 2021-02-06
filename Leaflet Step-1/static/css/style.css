@@ -8,3 +8,8 @@ body,
 html {
   height: 100%;
 }
+
+
+.leaflet-control{
+color: red;
+}
